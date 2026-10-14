@@ -1,1 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Tourist Transportation | Reliable & Safe Travel Across Cambodia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        khmer: {
+                            blue: '#0B2545',
+                            navy: '#134074',
+                            gold: '#D4AF37',
+                            amber: '#F59E0B',
+                            teal: '#00A896',
+                            light: '#EEF4F8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(11, 37, 69, 0.92) 0%, rgba(19, 64, 116, 0.85) 100%);
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-amber-500 selection:text-white">
 
+    <!-- Top Info Bar -->
+    <div class="bg-khmer-blue text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap">
+                <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i> Licensed & Safe Tourist Transport</span>
+                <span class="hidden md:flex items-center gap-1.5"><i data-lucide="languages" class="w-4 h-4 text-amber-400"></i> 100% Fluent English Drivers</span>
+                <span class="hidden lg:flex items-center gap-1.5"><i data-lucide="wifi" class="w-4 h-4 text-amber-400"></i> Free Wi-Fi & Cold Water</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-medium">
+                <a href="tel:+85512345678" class="hover:text-amber-400 transition flex items-center gap-1">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i> +855 (0) 12 345 678
+                </a>
+                <a href="https://t.me/eengkiaseng" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1">
+                    <i data-lucide="send" class="w-3.5 h-3.5 text-sky-400"></i> Telegram
+                </a>
+                <a href="https://wa.me/85512345678" target="_blank" class="hover:text-amber-400 transition flex items-center gap-1">
+                    <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center text-khmer-blue font-black text-xl shadow-md group-hover:scale-105 transition transform">
+                    TK
+                </div>
+                <div>
+                    <span class="block text-lg font-bold text-khmer-blue tracking-tight leading-none">TK TOURIST</span>
+                    <span class="text-xs font-semibold text-amber-600 tracking-wider uppercase">Transportation Cambodia</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+                <a href="#services" class="hover:text-amber-600 transition">Services</a>
+                <a href="#destinations" class="hover:text-amber-600 transition">Popular Routes</a>
+                <a href="#fleet" class="hover:text-amber-600 transition">Our Fleet</a>
+                <a href="#why-us" class="hover:text-amber-600 transition">Why Choose Us</a>
+                <a href="#reviews" class="hover:text-amber-600 transition">Testimonials</a>
+                <a href="#faq" class="hover:text-amber-600 transition">FAQ</a>
+            </nav>
+
+            <!-- CTA Header Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/85512345678" target="_blank" class="px-4 py-2.5 rounded-xl border-2 border-emerald-500 text-emerald-600 hover:bg-emerald-50 font-bold text-sm transition flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+                </a>
+                <a href="#booking" class="px-5 py-2.5 rounded-xl gold-gradient text-khmer-blue font-extrabold text-sm shadow-md hover:shadow-lg hover:brightness-105 transition flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Book Now
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#services" class="mobile-nav-link block py-2 font-medium text-slate-700 hover:text-amber-600">Services</a>
+            <a href="#destinations" class="mobile-nav-link block py-2 font-medium text-slate-700 hover:text-amber-600">Popular Routes</a>
+            <a href="#fleet" class="mobile-nav-link block py-2 font-medium text-slate-700 hover:text-amber-600">Our Fleet</a>
+            <a href="#why-us" class="mobile-nav-link block py-2 font-medium text-slate-700 hover:text-amber-600">Why Choose Us</a>
+            <a href="#reviews" class="mobile-nav-link block py-2 font-medium text-slate-700 hover:text-amber-600">Testimonials</a>
+            <a href="#faq" class="mobile-nav-link block py-2 font-medium text-slate-700 hover:text-amber-600">FAQ</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/85512345678" target="_blank" class="w-full py-2.5 rounded-xl border border-emerald-500 text-emerald-600 text-center font-bold text-sm flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
+                </a>
+                <a href="#booking" class="mobile-nav-link w-full py-2.5 rounded-xl gold-gradient text-khmer-blue text-center font-extrabold text-sm shadow flex items-center justify-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Quick Fare Estimate & Booking
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative hero-bg min-h-[640px] flex items-center py-16 lg:py-24">
+        <div class="absolute inset-0 gradient-overlay"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Text -->
+                <div class="lg:col-span-7 text-white space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-300 text-xs sm:text-sm font-semibold">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> #1 Rated Tourist Transport in Cambodia
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Explore Cambodia in <span class="text-amber-400">Ultimate Comfort</span> & Safety
+                    </h1>
+                    <p class="text-slate-200 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+                        Hassle-free private transport across Phnom Penh, Siem Reap, Sihanoukville piers, Kampot, and beyond. Punctual airport transfers, English-speaking drivers, and transparent affordable rates.
+                    </p>
+                    
+                    <!-- Quick Badges -->
+                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-6 text-xs sm:text-sm font-medium text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Zero Hidden Fees</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Clean, AC Vehicles</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>24/7 Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Interactive Booking Widget -->
+                <div id="booking" class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/50 text-slate-800">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h2 class="text-xl font-bold text-khmer-blue">Instant Trip Inquiry</h2>
+                                <p class="text-xs text-slate-500">Calculate fare & book via WhatsApp/Telegram</p>
+                            </div>
+                            <span class="px-2.5 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-bold">Fast Reply</span>
+                        </div>
+
+                        <form id="heroBookingForm" class="space-y-4">
+                            <!-- Pick up -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Pickup Location</label>
+                                <div class="relative">
+                                    <i data-lucide="map-pin" class="w-4 h-4 absolute left-3 top-3 text-amber-600"></i>
+                                    <select id="pickupSelect" required class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                                        <option value="Phnom Penh Airport (PNH)">Phnom Penh Airport (PNH)</option>
+                                        <option value="Phnom Penh City Hotel">Phnom Penh Hotel / City</option>
+                                        <option value="Siem Reap Airport (SAI)">Siem Reap Airport (SAI)</option>
+                                        <option value="Siem Reap City / Pub Street">Siem Reap Hotel / City</option>
+                                        <option value="Sihanoukville Airport / Pier (Koh Rong)">Sihanoukville Pier / Ferry</option>
+                                        <option value="Kampot Town">Kampot Town</option>
+                                        <option value="Kep Beach">Kep Beach</option>
+                                        <option value="Battambang City">Battambang City</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Drop off -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Drop-off Destination</label>
+                                <div class="relative">
+                                    <i data-lucide="navigation" class="w-4 h-4 absolute left-3 top-3 text-emerald-600"></i>
+                                    <select id="dropoffSelect" required class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                                        <option value="Siem Reap City / Pub Street">Siem Reap Hotel / City</option>
+                                        <option value="Phnom Penh City Hotel">Phnom Penh Hotel / City</option>
+                                        <option value="Sihanoukville Pier / Ferry">Sihanoukville Pier (Koh Rong)</option>
+                                        <option value="Kampot Town">Kampot Town</option>
+                                        <option value="Kep Beach">Kep Beach</option>
+                                        <option value="Battambang City">Battambang City</option>
+                                        <option value="Mondulkiri / Sen Monorom">Mondulkiri Province</option>
+                                        <option value="Custom Tour Destination">Custom Tour / Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Date & Time Row -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Date</label>
+                                    <input type="date" id="travelDate" required class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Time</label>
+                                    <input type="time" id="travelTime" value="09:00" required class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Vehicle & Passengers -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Vehicle Type</label>
+                                    <select id="vehicleSelect" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                                        <option value="Sedan (1-3 Pax)" data-multiplier="1">Sedan (1-3 Pax)</option>
+                                        <option value="SUV / Crossover (1-4 Pax)" data-multiplier="1.3">SUV / Lexus (1-4 Pax)</option>
+                                        <option value="VIP Minivan (5-10 Pax)" data-multiplier="1.8">VIP Minivan (5-10 Pax)</option>
+                                        <option value="Luxury Bus (11-25 Pax)" data-multiplier="2.8">Luxury Minibus (11+ Pax)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Passengers</label>
+                                    <input type="number" id="passengerCount" min="1" max="30" value="2" class="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- Fare Estimate Box -->
+                            <div class="bg-amber-50 border border-amber-200/80 rounded-xl p-3 flex items-center justify-between">
+                                <div>
+                                    <span class="block text-xs font-medium text-amber-900">Estimated Price starting at</span>
+                                    <span class="text-xs text-amber-700"> Toll fees & fuel included</span>
+                                </div>
+                                <div class="text-right">
+                                    <span id="estimatedFare" class="text-2xl font-black text-khmer-blue">$75</span>
+                                    <span class="text-xs font-bold text-slate-500 block">USD</span>
+                                </div>
+                            </div>
+
+                            <!-- Submit Buttons -->
+                            <div class="grid grid-cols-2 gap-3 pt-1">
+                                <button type="button" onclick="sendBooking('whatsapp')" class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm rounded-xl transition flex items-center justify-center gap-1.5 shadow-md">
+                                    <i data-lucide="message-circle" class="w-4 h-4"></i> Book WhatsApp
+                                </button>
+                                <button type="button" onclick="sendBooking('telegram')" class="w-full py-3 bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs sm:text-sm rounded-xl transition flex items-center justify-center gap-1.5 shadow-md">
+                                    <i data-lucide="send" class="w-4 h-4"></i> Book Telegram
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Value Highlights Bar -->
+    <section class="bg-khmer-navy text-white py-10 border-t border-b border-amber-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-amber-400/50 transition">
+                    <i data-lucide="badge-dollar-sign" class="w-8 h-8 text-amber-400 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-base">Affordable Rates</h3>
+                    <p class="text-xs text-slate-300 mt-1">Best price guarantee with zero hidden charges</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-amber-400/50 transition">
+                    <i data-lucide="user-check" class="w-8 h-8 text-amber-400 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-base">English Drivers</h3>
+                    <p class="text-xs text-slate-300 mt-1">Friendly, courteous & experienced tour drivers</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-amber-400/50 transition">
+                    <i data-lucide="shield-check" class="w-8 h-8 text-amber-400 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-base">100% Safe Vehicles</h3>
+                    <p class="text-xs text-slate-300 mt-1">Regularly serviced, insured & modern AC fleet</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-amber-400/50 transition">
+                    <i data-lucide="clock" class="w-8 h-8 text-amber-400 mx-auto mb-2"></i>
+                    <h3 class="font-bold text-base">24/7 Punctual</h3>
+                    <p class="text-xs text-slate-300 mt-1">On-time pickup at any airport, hotel, or pier</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Offered -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-extrabold text-xs uppercase tracking-widest block mb-2">What We Offer</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-khmer-blue">Comprehensive Transportation Services in Cambodia</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-3">Whether you need a quick airport shuttle or a full week multi-province private driver, TK Tourist Transportation has you covered.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-5">
+                        <i data-lucide="plane-landing" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-khmer-blue mb-2">Airport Pickup & Drop-off</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Flight tracking, meet-and-greet inside Phnom Penh (PNH) and Siem Reap (SAI) airports with welcome name card.
+                    </p>
+                    <a href="#booking" onclick="prefillService('Airport Transfer')" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
+                        Book Airport Transfer <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center mb-5">
+                        <i data-lucide="anchor" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-khmer-blue mb-2">Hotel & Ferry Pier Transfers</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Direct transfers between hotel lobbies and island ferry piers in Sihanoukville (Autonomous Port & Sihanoukville piers for Koh Rong).
+                    </p>
+                    <a href="#booking" onclick="prefillService('Pier Transfer')" class="text-xs font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+                        Book Pier Transfer <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5">
+                        <i data-lucide="map" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-khmer-blue mb-2">Inter-Province Express</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Comfortable highway driving between Phnom Penh, Siem Reap, Kampot, Kep, Battambang, Mondulkiri, and border crossings.
+                    </p>
+                    <a href="#booking" onclick="prefillService('Province Transfer')" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
+                        Book Inter-Province <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-5">
+                        <i data-lucide="compass" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-khmer-blue mb-2">Custom Sightseeing Tours</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        Full-day or multi-day private chauffeur for Angkor Wat temple circuits, city tours, countryside excursions, and waterfall trips.
+                    </p>
+                    <a href="#booking" onclick="prefillService('Custom Sightseeing')" class="text-xs font-bold text-purple-600 hover:text-purple-700 flex items-center gap-1">
+                        Plan Custom Tour <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Routes Grid -->
+    <section id="destinations" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-amber-600 font-extrabold text-xs uppercase tracking-widest block mb-2">Popular Destinations</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-khmer-blue">Top Cambodian Travel Routes</h2>
+                </div>
+                <p class="text-slate-500 text-sm mt-3 md:mt-0 max-w-md">Click any route below to instantly calculate the price and prepare your reservation.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Route Card 1 -->
+                <div class="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col bg-slate-50/50">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Siem Reap Angkor Wat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-khmer-blue/90 text-amber-400 font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">Express Highway</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-bold text-slate-500 mb-2">
+                                <span>Phnom Penh</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <span>Siem Reap</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg mb-1">Phnom Penh ⇄ Siem Reap</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">Direct private vehicle via Highway 6 or Expressway, 5-6 hours travel time.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-200/80 pt-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Sedan Rates from</span>
+                                <span class="text-xl font-extrabold text-khmer-blue">$75</span>
+                            </div>
+                            <button onclick="selectRoute('Phnom Penh City Hotel', 'Siem Reap City / Pub Street')" class="px-4 py-2 bg-khmer-blue hover:bg-khmer-navy text-white text-xs font-bold rounded-xl transition">Select Route</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Card 2 -->
+                <div class="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col bg-slate-50/50">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Sihanoukville Island Pier" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-emerald-600/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">Fast Expressway</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-bold text-slate-500 mb-2">
+                                <span>Phnom Penh</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <span>Sihanoukville</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg mb-1">Phnom Penh ⇄ Sihanoukville Pier</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">Quick 2.5-hour drive via Phnom Penh-Sihanoukville Expressway directly to Koh Rong ferries.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-200/80 pt-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Sedan Rates from</span>
+                                <span class="text-xl font-extrabold text-khmer-blue">$65</span>
+                            </div>
+                            <button onclick="selectRoute('Phnom Penh City Hotel', 'Sihanoukville Pier / Ferry')" class="px-4 py-2 bg-khmer-blue hover:bg-khmer-navy text-white text-xs font-bold rounded-xl transition">Select Route</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Card 3 -->
+                <div class="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col bg-slate-50/50">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=800&auto=format&fit=crop" alt="Kampot and Kep" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-amber-600/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">Riverside / Coast</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-bold text-slate-500 mb-2">
+                                <span>Phnom Penh</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <span>Kampot / Kep</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg mb-1">Phnom Penh ⇄ Kampot & Kep</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">3 hours smooth drive to pepper plantations, Bokor Mountain, and Kep crab market.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-200/80 pt-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Sedan Rates from</span>
+                                <span class="text-xl font-extrabold text-khmer-blue">$55</span>
+                            </div>
+                            <button onclick="selectRoute('Phnom Penh City Hotel', 'Kampot Town')" class="px-4 py-2 bg-khmer-blue hover:bg-khmer-navy text-white text-xs font-bold rounded-xl transition">Select Route</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Card 4 -->
+                <div class="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col bg-slate-50/50">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?q=80&w=800&auto=format&fit=crop" alt="Battambang City" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-purple-600/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">Colonial Heritage</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-bold text-slate-500 mb-2">
+                                <span>Siem Reap</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <span>Battambang</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg mb-1">Siem Reap ⇄ Battambang</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">Scenic 3-hour journey connecting temple sights with the famous Bamboo Train city.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-200/80 pt-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Sedan Rates from</span>
+                                <span class="text-xl font-extrabold text-khmer-blue">$45</span>
+                            </div>
+                            <button onclick="selectRoute('Siem Reap City / Pub Street', 'Battambang City')" class="px-4 py-2 bg-khmer-blue hover:bg-khmer-navy text-white text-xs font-bold rounded-xl transition">Select Route</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Card 5 -->
+                <div class="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col bg-slate-50/50">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" alt="Airport Shuttle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-emerald-600/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">Airport Express</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-bold text-slate-500 mb-2">
+                                <span>PNH / SAI Airports</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <span>Hotels</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg mb-1">Airport Private Transfers</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">Phnom Penh PNH ($15+) or Siem Reap SAI International ($35+) directly to hotel.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-200/80 pt-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Rates starting at</span>
+                                <span class="text-xl font-extrabold text-khmer-blue">$15</span>
+                            </div>
+                            <button onclick="selectRoute('Phnom Penh Airport (PNH)', 'Phnom Penh City Hotel')" class="px-4 py-2 bg-khmer-blue hover:bg-khmer-navy text-white text-xs font-bold rounded-xl transition">Select Route</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Card 6 -->
+                <div class="group border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col bg-slate-50/50">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop" alt="Mondulkiri Nature" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 bg-teal-600/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">Eco Nature</span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-bold text-slate-500 mb-2">
+                                <span>Phnom Penh</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <span>Mondulkiri</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg mb-1">Phnom Penh ⇄ Mondulkiri</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-4">5-6 hours ride into eastern Cambodia's elephant sanctuaries and waterfalls.</p>
+                        </div>
+                        <div class="flex items-center justify-between border-t border-slate-200/80 pt-4">
+                            <div>
+                                <span class="text-xs text-slate-400 block">Sedan Rates from</span>
+                                <span class="text-xl font-extrabold text-khmer-blue">$110</span>
+                            </div>
+                            <button onclick="selectRoute('Phnom Penh City Hotel', 'Mondulkiri / Sen Monorom')" class="px-4 py-2 bg-khmer-blue hover:bg-khmer-navy text-white text-xs font-bold rounded-xl transition">Select Route</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Showcase -->
+    <section id="fleet" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-extrabold text-xs uppercase tracking-widest block mb-2">Modern Vehicle Fleet</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-khmer-blue">Choose Your Perfect Ride</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-3">All vehicles are thoroughly disinfected, fitted with strong air conditioning, and feature complimentary cold water bottles and high-speed Wi-Fi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Vehicle 1: Sedan -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-slate-200 h-48 relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop" alt="Sedan Toyota Camry" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-khmer-blue text-amber-400 text-xs font-bold px-3 py-1 rounded-full">Toyota Prius / Camry</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-khmer-blue mb-1">Standard Sedan</h3>
+                            <p class="text-xs text-slate-500 mb-4">Ideal for solo travelers, couples & small luggage.</p>
+                            
+                            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                                <li class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-amber-500"></i> Up to 3 Passengers</li>
+                                <li class="flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4 text-amber-500"></i> 2 Large Suitcases</li>
+                                <li class="flex items-center gap-2"><i data-lucide="wind" class="w-4 h-4 text-amber-500"></i> Full Air Conditioning</li>
+                                <li class="flex items-center gap-2"><i data-lucide="wifi" class="w-4 h-4 text-amber-500"></i> Free Wi-Fi & Water</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Starting Rate</span>
+                            <span class="text-lg font-black text-khmer-blue">Budget Friendly</span>
+                        </div>
+                        <a href="#booking" onclick="setVehicle('Sedan (1-3 Pax)')" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-600 text-khmer-blue font-bold text-xs rounded-xl transition">Select</a>
+                    </div>
+                </div>
+
+                <!-- Vehicle 2: SUV -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border-2 border-amber-400 relative flex flex-col justify-between">
+                    <span class="absolute top-0 right-0 bg-amber-500 text-khmer-blue font-extrabold text-[10px] uppercase px-3 py-1 rounded-bl-xl z-10">Most Popular</span>
+                    <div>
+                        <div class="bg-slate-200 h-48 relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=800&auto=format&fit=crop" alt="Lexus SUV" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-khmer-blue text-amber-400 text-xs font-bold px-3 py-1 rounded-full">Lexus RX / Highlander</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-khmer-blue mb-1">VIP SUV / Crossover</h3>
+                            <p class="text-xs text-slate-500 mb-4">Extra legroom, high ground clearance, premium comfort.</p>
+                            
+                            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                                <li class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-amber-500"></i> Up to 4 Passengers</li>
+                                <li class="flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4 text-amber-500"></i> 4 Medium Luggage</li>
+                                <li class="flex items-center gap-2"><i data-lucide="shield" class="w-4 h-4 text-amber-500"></i> Leather Seats & Smooth Ride</li>
+                                <li class="flex items-center gap-2"><i data-lucide="wifi" class="w-4 h-4 text-amber-500"></i> Free Wi-Fi & Cold Towels</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Starting Rate</span>
+                            <span class="text-lg font-black text-khmer-blue">Premium Comfort</span>
+                        </div>
+                        <a href="#booking" onclick="setVehicle('SUV / Crossover (1-4 Pax)')" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-600 text-khmer-blue font-bold text-xs rounded-xl transition">Select</a>
+                    </div>
+                </div>
+
+                <!-- Vehicle 3: VIP Minivan -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-slate-200 h-48 relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=800&auto=format&fit=crop" alt="Toyota Commuter Minivan" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-khmer-blue text-amber-400 text-xs font-bold px-3 py-1 rounded-full">Hyundai H1 / Commuter</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-khmer-blue mb-1">VIP Minivan</h3>
+                            <p class="text-xs text-slate-500 mb-4">Great for families, groups of friends & bulky bags.</p>
+                            
+                            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                                <li class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-amber-500"></i> 5 to 10 Passengers</li>
+                                <li class="flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4 text-amber-500"></i> 8-10 Large Suitcases</li>
+                                <li class="flex items-center gap-2"><i data-lucide="tv" class="w-4 h-4 text-amber-500"></i> Reclining VIP Seats</li>
+                                <li class="flex items-center gap-2"><i data-lucide="wifi" class="w-4 h-4 text-amber-500"></i> High-Speed Wi-Fi & Water</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Starting Rate</span>
+                            <span class="text-lg font-black text-khmer-blue">Group Choice</span>
+                        </div>
+                        <a href="#booking" onclick="setVehicle('VIP Minivan (5-10 Pax)')" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-600 text-khmer-blue font-bold text-xs rounded-xl transition">Select</a>
+                    </div>
+                </div>
+
+                <!-- Vehicle 4: Minibus -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-slate-200 h-48 relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop" alt="Luxury Tourist Bus" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-khmer-blue text-amber-400 text-xs font-bold px-3 py-1 rounded-full">Coaster / Luxury Bus</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-bold text-khmer-blue mb-1">Luxury Minibus</h3>
+                            <p class="text-xs text-slate-500 mb-4">For corporate delegations, tour groups & events.</p>
+                            
+                            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+                                <li class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-amber-500"></i> 11 to 25 Passengers</li>
+                                <li class="flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4 text-amber-500"></i> Ample Luggage Space</li>
+                                <li class="flex items-center gap-2"><i data-lucide="mic" class="w-4 h-4 text-amber-500"></i> PA System & Tour Setup</li>
+                                <li class="flex items-center gap-2"><i data-lucide="sparkles" class="w-4 h-4 text-amber-500"></i> On-board Refreshments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Starting Rate</span>
+                            <span class="text-lg font-black text-khmer-blue">Large Group</span>
+                        </div>
+                        <a href="#booking" onclick="setVehicle('Luxury Bus (11-25 Pax)')" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-600 text-khmer-blue font-bold text-xs rounded-xl transition">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Safety Guarantee -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Image Collage -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000&auto=format&fit=crop" alt="Professional Driver Cambodia" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 z-20 bg-khmer-blue text-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-full bg-amber-500 text-khmer-blue flex items-center justify-center font-black">100%</div>
+                            <span class="font-bold text-sm">English Speaking Drivers</span>
+                        </div>
+                        <p class="text-xs text-slate-300">Easy communication, helpful travel advice, and smooth door-to-door coordination.</p>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="space-y-6">
+                    <span class="text-amber-600 font-extrabold text-xs uppercase tracking-widest block">Safety & Quality First</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-khmer-blue leading-tight">Your Peace of Mind is Our Highest Priority</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Navigating new roads in a foreign country can be overwhelming. At TK Tourist Transportation, we guarantee a relaxing, punctual, and safe journey from the moment you step out of the airport terminal until your final hotel drop-off.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 font-bold">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-base">Vetted & Licensed Professional Drivers</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">All drivers hold professional passenger transport licenses, background checks, and years of tourist service experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center shrink-0 font-bold">
+                                <i data-lucide="wrench" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-base">Rigorously Maintained & Insured Fleet</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Vehicles undergo weekly safety checks, tire inspections, and AC servicing to handle Cambodia's climate smoothly.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">
+                                <i data-lucide="headphones" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-base">24/7 Dispatch Support via WhatsApp</h3>
+                                <p class="text-xs text-slate-500 mt-0.5">Have a flight delay or last-minute itinerary change? Our dispatch team responds in minutes via instant messenger.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-4">
+                        <a href="#booking" class="px-6 py-3 rounded-xl gold-gradient text-khmer-blue font-extrabold text-sm shadow-md hover:shadow-lg transition">Reserve Your Ride</a>
+                        <a href="tel:+85512345678" class="px-5 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 font-bold text-sm transition flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i> Call Dispatch
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Customer Reviews -->
+    <section id="reviews" class="py-20 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-extrabold text-xs uppercase tracking-widest block mb-2">Happy Travelers</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-khmer-blue">What Tourists Say About TK Transportation</h2>
+                <div class="flex items-center justify-center gap-1 mt-3">
+                    <div class="flex text-amber-400">
+                        <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                    </div>
+                    <span class="text-sm font-bold text-slate-700 ml-2">4.9 / 5.0 Average Rating</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic mb-6">
+                            "TK Transportation made our trip from Phnom Penh to Sihanoukville ferry pier so effortless! The Lexus SUV was spotless, air-conditioned, and our driver Mr. Dara spoke fluent English. He even helped us carry our heavy backpacks to the boat."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 font-bold text-slate-600 flex items-center justify-center text-sm">
+                            SD
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-khmer-blue">Sophie & David</h4>
+                            <span class="text-[11px] text-slate-400">Travelers from Australia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic mb-6">
+                            "Booked airport pickup in Siem Reap SAI airport. Our flight was delayed by 1 hour, but TK driver was waiting patiently holding my name sign. Fair price, smooth driving, and cold towels ready upon arrival. 10/10 service!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 font-bold text-slate-600 flex items-center justify-center text-sm">
+                            MK
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-khmer-blue">Michael K.</h4>
+                            <span class="text-[11px] text-slate-400">Solo Traveler from Germany</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic mb-6">
+                            "We rented the Hyundai VIP Minivan for our family group of 7 across Phnom Penh, Kampot, and Kep. Excellent driver who knew all the best local food stops along the road. Extremely reliable and affordable!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 font-bold text-slate-600 flex items-center justify-center text-sm">
+                            EL
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs text-khmer-blue">Elena & Family</h4>
+                            <span class="text-[11px] text-slate-400">Family Trip from UK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-amber-600 font-extrabold text-xs uppercase tracking-widest block mb-2">Got Questions?</span>
+                <h2 class="text-3xl font-extrabold text-khmer-blue">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-5 text-left font-bold text-khmer-blue flex items-center justify-between bg-slate-50 hover:bg-slate-100 transition focus:outline-none" onclick="toggleFaq('faq1')">
+                        <span>How do I book a private car with TK Transportation?</span>
+                        <i id="faq1-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+                    </button>
+                    <div id="faq1" class="hidden p-5 text-xs sm:text-sm text-slate-600 border-t border-slate-200 bg-white leading-relaxed">
+                        You can fill out our quick trip estimator form above, or message us directly via WhatsApp or Telegram (+855 12 345 678). We confirm details, date, pickup location, and send you instant booking confirmation.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-5 text-left font-bold text-khmer-blue flex items-center justify-between bg-slate-50 hover:bg-slate-100 transition focus:outline-none" onclick="toggleFaq('faq2')">
+                        <span>How do payment and cancellation work?</span>
+                        <i id="faq2-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+                    </button>
+                    <div id="faq2" class="hidden p-5 text-xs sm:text-sm text-slate-600 border-t border-slate-200 bg-white leading-relaxed">
+                        Payment can be made in cash (USD or KHR) directly to the driver at the end of your trip, or via KHQR bank transfer. We offer free cancellation up to 12 hours before pickup.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-5 text-left font-bold text-khmer-blue flex items-center justify-between bg-slate-50 hover:bg-slate-100 transition focus:outline-none" onclick="toggleFaq('faq3')">
+                        <span>What if my flight to Phnom Penh or Siem Reap is delayed?</span>
+                        <i id="faq3-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+                    </button>
+                    <div id="faq3" class="hidden p-5 text-xs sm:text-sm text-slate-600 border-t border-slate-200 bg-white leading-relaxed">
+                        We continuously monitor live flight arrival statuses. If your flight is delayed, your driver will automatically adjust their waiting time at no extra charge.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="w-full p-5 text-left font-bold text-khmer-blue flex items-center justify-between bg-slate-50 hover:bg-slate-100 transition focus:outline-none" onclick="toggleFaq('faq4')">
+                        <span>Are highway toll fees and fuel included in the price?</span>
+                        <i id="faq4-icon" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
+                    </button>
+                    <div id="faq4" class="hidden p-5 text-xs sm:text-sm text-slate-600 border-t border-slate-200 bg-white leading-relaxed">
+                        Yes! All quoted prices include vehicle, professional driver, fuel, expressway tolls, parking fees, and onboard complimentary cold water and Wi-Fi. No hidden surprises!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Banner -->
+    <section class="bg-khmer-blue text-white py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Ready to Journey Across Cambodia Stress-Free?</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base">Get instant response, transparent fixed rates, and a comfortable car waiting for you at the airport or hotel.</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="https://wa.me/85512345678" target="_blank" class="px-6 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold rounded-xl shadow-lg transition flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> Chat on WhatsApp
+                </a>
+                <a href="https://t.me/TK_Transportation" target="_blank" class="px-6 py-3.5 bg-sky-500 hover:bg-sky-600 text-white font-extrabold rounded-xl shadow-lg transition flex items-center gap-2">
+                    <i data-lucide="send" class="w-5 h-5"></i> Chat on Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-xs sm:text-sm py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <!-- Brand Info -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 gold-gradient rounded-xl flex items-center justify-center text-khmer-blue font-black text-lg">
+                        TK
+                    </div>
+                    <div>
+                        <span class="block text-base font-bold text-white leading-none">TK TOURIST</span>
+                        <span class="text-[10px] font-semibold text-amber-400 uppercase tracking-wider">Transportation</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                     Cambodia's premier tourist private transport service. Dedicated to safety, punctuality, and comfortable journeys nationwide.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#services" class="hover:text-amber-400 transition">Services Offered</a></li>
+                    <li><a href="#destinations" class="hover:text-amber-400 transition">Popular Tourist Routes</a></li>
+                    <li><a href="#fleet" class="hover:text-amber-400 transition">Our Vehicle Fleet</a></li>
+                    <li><a href="#why-us" class="hover:text-amber-400 transition">Safety Guarantee</a></li>
+                    <li><a href="#booking" class="hover:text-amber-400 transition">Fare Estimate Widget</a></li>
+                </ul>
+            </div>
+
+            <!-- Major Destinations -->
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Key Destinations</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><span class="text-slate-300">Phnom Penh Airport (PNH)</span></li>
+                    <li><span class="text-slate-300">Siem Reap Angkor (SAI)</span></li>
+                    <li><span class="text-slate-300">Sihanoukville & Koh Rong Pier</span></li>
+                    <li><span class="text-slate-300">Kampot & Kep Beach</span></li>
+                    <li><span class="text-slate-300">Battambang & Mondulkiri</span></li>
+                </ul>
+            </div>
+
+            <!-- Direct Contact -->
+            <div class="space-y-3">
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">24/7 Hotline & Contact</h4>
+                <p class="flex items-center gap-2 text-xs">
+                    <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i> +855 (0) 12 345 678
+                </p>
+                <p class="flex items-center gap-2 text-xs">
+                    <i data-lucide="mail" class="w-4 h-4 text-amber-400"></i> info@tktouristtransport.com
+                </p>
+                <p class="flex items-center gap-2 text-xs">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i> Phnom Penh & Siem Reap, Cambodia
+                </p>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+            <p>&copy; 2026 TK Tourist Transportation Cambodia. All rights reserved.</p>
+            <p>Designed for fast mobile booking & high reliability.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Base price calculation map for Cambodian routes
+        const baseRoutePrices = {
+            'Phnom Penh Airport (PNH)-Phnom Penh City Hotel': 18,
+            'Phnom Penh City Hotel-Siem Reap City / Pub Street': 75,
+            'Phnom Penh City Hotel-Sihanoukville Pier / Ferry': 65,
+            'Phnom Penh City Hotel-Kampot Town': 55,
+            'Phnom Penh City Hotel-Kep Beach': 60,
+            'Phnom Penh City Hotel-Battambang City': 85,
+            'Phnom Penh City Hotel-Mondulkiri / Sen Monorom': 110,
+            'Siem Reap Airport (SAI)-Siem Reap City / Pub Street': 35,
+            'Siem Reap City / Pub Street-Battambang City': 45,
+            'Siem Reap City / Pub Street-Phnom Penh City Hotel': 75,
+            'Sihanoukville Airport / Pier (Koh Rong)-Kampot Town': 45,
+        };
+
+        // Set default today date
+        document.getElementById('travelDate').valueAsDate = new Date();
+
+        function calculateFare() {
+            const pickup = document.getElementById('pickupSelect').value;
+            const dropoff = document.getElementById('dropoffSelect').value;
+            const vehicleSelect = document.getElementById('vehicleSelect');
+            const multiplier = parseFloat(vehicleSelect.options[vehicleSelect.selectedIndex].getAttribute('data-multiplier') || '1');
+
+            const routeKey1 = `${pickup}-${dropoff}`;
+            const routeKey2 = `${dropoff}-${pickup}`;
+
+            let basePrice = 75; // default fallback
+
+            if (baseRoutePrices[routeKey1]) {
+                basePrice = baseRoutePrices[routeKey1];
+            } else if (baseRoutePrices[routeKey2]) {
+                basePrice = baseRoutePrices[routeKey2];
+            } else if (pickup.includes('Airport') || dropoff.includes('Airport')) {
+                basePrice = 25;
+            }
+
+            const calculated = Math.round(basePrice * multiplier);
+            document.getElementById('estimatedFare').innerText = `$${calculated}`;
+        }
+
+        // Attach event listeners for real-time price updates
+        document.getElementById('pickupSelect').addEventListener('change', calculateFare);
+        document.getElementById('dropoffSelect').addEventListener('change', calculateFare);
+        document.getElementById('vehicleSelect').addEventListener('change', calculateFare);
+
+        // Send Booking via WhatsApp / Telegram
+        function sendBooking(platform) {
+            const pickup = document.getElementById('pickupSelect').value;
+            const dropoff = document.getElementById('dropoffSelect').value;
+            const date = document.getElementById('travelDate').value;
+            const time = document.getElementById('travelTime').value;
+            const vehicle = document.getElementById('vehicleSelect').value;
+            const passengers = document.getElementById('passengerCount').value;
+            const fare = document.getElementById('estimatedFare').innerText;
+
+            const textMsg = `Hello TK Tourist Transportation! 🚖\nI would like to inquire/book a ride:\n\n` +
+                `📍 Pickup: ${pickup}\n` +
+                `🏁 Drop-off: ${dropoff}\n` +
+                `📅 Date: ${date}\n` +
+                `⏰ Time: ${time}\n` +
+                `🚘 Vehicle: ${vehicle}\n` +
+                `👥 Passengers: ${passengers}\n` +
+                `💰 Estimated Price: ${fare}\n\n` +
+                `Please confirm availability!`;
+
+            const encodedMsg = encodeURIComponent(textMsg);
+
+            if (platform === 'whatsapp') {
+                window.open(`https://wa.me/85512345678?text=${encodedMsg}`, '_blank');
+            } else {
+                window.open(`https://t.me/eengkiaseng?text=${encodedMsg}`, '_blank');
+            }
+        }
+
+        // Helper to select route from popular card grid
+        function selectRoute(pickup, dropoff) {
+            document.getElementById('pickupSelect').value = pickup;
+            document.getElementById('dropoffSelect').value = dropoff;
+            calculateFare();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Helper to select vehicle from fleet card grid
+        function setVehicle(vehicleValue) {
+            document.getElementById('vehicleSelect').value = vehicleValue;
+            calculateFare();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Helper for service prefill
+        function prefillService(serviceName) {
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Toggle FAQ Accordion
+        function toggleFaq(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(`${id}-icon`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Initial fare run
+        calculateFare();
+    </script>
+</body>
+</html>
